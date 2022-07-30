@@ -1,0 +1,34 @@
+<app-header></app-header>
+<app-acerca-de></app-acerca-de>
+<app-experiencia></app-experiencia>
+
+<div class="container">
+
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreH">Nombre Habilidad</label>
+                    <input type="text" class="from-control" id="nombreH" name="nombreH" [(ngModel)]="nombreH" required>
+                </div>
+                <div class="form-group">
+                    <label for="progressH">Nivel de habilidad en porcentaje</label>
+                    <div>
+                    <input type="text" class="from-control2" id="progressH" name="progressH" [(ngModel)]="progressH" required ><p>%</p>
+                    </div>
+                </div>
+                <button class="btn btn-info">Agregar habilidad</button>
+            </form>
+        </div>
+    </div>
+    
+    </div>
+
+<app-educacion></app-educacion>
+<app-skills></app-skills>
+<app-proyectos></app-proyectos>
+<app-footer></app-footer>
+
+
+
+

@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="logos">
+    <div>
+      <a href="https://www.argentina.gob.ar/latiendo/queres-capacitarte-y-estudiar/argentina-programa" target="_blank"><img src="../../../assets/APLogo.png" class="logoap" alt="logo argentina programa"></a>
+    </div>
+    <div>
+      <div>
+        <a href="https://www.linkedin.com/in/adrian-gonzalo-roggiero-39b0611b9" target="_blank">
+          <img src="../../../assets/linkedin.png" class="redes" alt="linkedin">
+        </a>
+        <a href="https://github.com/rogg2002/PortfolioArgentinaPrograma.git"target="_blank" >
+          <img src="../../../assets/github.png" class="redes" alt="">
+        </a>
+      
+      
+        <button type="button" class="btn btn-outline-primary" (click)="login()" *ngIf="!isLogged">Iniciar sesión</button>
+        <button type="button" class="btn btn-outline-primary" (click)="onLogOut()" *ngIf="isLogged">Cerrar sesión</button>
+
+      </div>
+    </div>
+  </div>
+ 
+  <div>
+    
+
+    <img src="../../../assets/tecladobanner.jpg" class="banner" alt="imagen de fondo">
+    
+  
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <h2 class="frase">
+        La mente no es como un vaso que hay que llenar, sino como un fuego que alimentar (anónimo).
+      </h2>
+    </div>
+  </div>
+  
+  <!-- <app-logoap></app-logoap>
+    <app-redes-sociales></app-redes-sociales>
+    <app-banner></app-banner> -->
+</div>

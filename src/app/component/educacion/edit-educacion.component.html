@@ -1,0 +1,32 @@
+<app-header></app-header>
+<app-acerca-de></app-acerca-de>
+
+
+
+<div class="container" *ngIf="eduLab">
+
+  <div class="row">
+    <div>
+      <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+        <div class="form-group">
+          <label for="nombreEdu">Entidad Educativa</label>
+          <input type="text" class="from-control" id="nombreEdu" name="nombreEdu" [(ngModel)]="eduLab.nombreEdu"
+            required>
+        </div>
+        <div class="form-group">
+          <label for="descripcionEdu">Descripcion</label>
+          <input type="text" class="from-control2" id="descripcionEdu" name="descripcionEdu"
+            [(ngModel)]="eduLab.descripcionEdu" required>
+        </div>
+        <button class="btn btn-info">Actualizar</button>
+      </form>
+    </div>
+  </div>
+
+</div>
+<app-experiencia></app-experiencia>
+<app-educacion></app-educacion>
+
+<app-skills></app-skills>
+<app-proyectos></app-proyectos>
+<app-footer></app-footer>

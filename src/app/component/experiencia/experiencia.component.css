@@ -1,0 +1,16 @@
+.row{
+    background-color: black;
+}
+
+.btnedit{
+    width: 5%;
+}
+
+h2,h3,td{
+    color:rgba(255, 255, 255, 0.664);
+}
+h1{
+ color: white;
+ text-decoration: underline;
+
+}

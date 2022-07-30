@@ -1,0 +1,29 @@
+<app-header></app-header>
+<app-acerca-de></app-acerca-de>
+<app-experiencia></app-experiencia>
+
+<div class="container" *ngIf="skiLab">
+
+    <div class="row">
+      <div>
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+          <div class="form-group">
+            <label for="nombreH">Habilidad</label>
+            <input type="text" class="from-control" id="nombreH" name="nombreH" [(ngModel)]="skiLab.nombreH" required>
+          </div>
+          <div class="form-group">
+            <label for="progressH">Nivel de habilidad en porcentaje</label>
+            <input type="text" class="from-control2" id="progressH" name="progressH"
+              [(ngModel)]="skiLab.progressH" required>
+          </div>
+          <button class="btn btn-info">Actualizar</button>
+        </form>
+      </div>
+    </div>
+  
+  </div>
+
+<app-educacion></app-educacion>
+<app-skills></app-skills>
+<app-proyectos></app-proyectos>
+<app-footer></app-footer>

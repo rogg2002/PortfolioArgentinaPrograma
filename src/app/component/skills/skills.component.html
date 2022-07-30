@@ -1,0 +1,54 @@
+<div class="row">
+  <h1>Soft & Hard Skills</h1>
+  <div class="col-lg-2">
+    <button type="button" class="btn btn-primary" routerLink="/nuevaski" *ngIf="isLogged">Nueva habilidad</button>
+  </div>
+
+  <div class="col-lg-1"></div>
+  <div class="col-lg-5">
+    <table class="table">
+      <tbody>
+        <tr *ngFor="let Skills of ski">
+          <td>
+
+            <h2>{{Skills.nombreH}}</h2>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                style="width: {{Skills.progressH}}%">{{Skills.progressH}}%</div>
+            </div>
+
+            
+
+
+          </td>
+
+
+
+
+
+          <td *ngIf="isLogged"><button class="btn btn-dark" routerLink="/editski/{{Skills.id}}">
+              <i class="bi bi-pencil-fill"></i></button>
+          </td>
+          <td *ngIf="isLogged"><button class="btn btn-dark" (click)="delete(Skills.id)">
+              <i class="bi bi-trash"></i></button>
+          </td>
+        </tr>
+      </tbody>
+
+    </table>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
